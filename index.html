@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Webpage</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/MyPage.css">
+
+	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+	<h1> ABOUT ME </h1>
+
+	<button type="submit" class="mybtn" data-target="My Hobbies index.html">HOBBIES</button>
+
+	<script>
+
+	$('.mybtn').on('click', function(event){
+		event.preventDefault();
+		var url = $(this).data('target');
+		location.replace(url);
+
+
+	});
+
+	</script>
+
+	<p> Hello! I am Emma. Welcome to my webpage. </p>
+	<p><img alt= 'My Photo' src=thumb_IMG_1207_1024.jpg width = 300</p>
+
+	<h2> <em>My Hobbies</em></h2>
+	<p>
+		<ul>
+			<li>Hockey</li>
+			<li>Swimming</li>
+			<li>Surfing</li>
+		</ul>
+	</p>
+
+	<h2><em>Educational Background</em></h2>
+	<p>
+		<table>
+			<thead>
+				<tr>
+					<th><b>YEAR</b></th>
+					<th><b>DEGREE</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2015-19</td>
+					<td>ENGINEERING MASTERS</td>
+				</tr>
+				<tr>
+					<td>2013-14</td>
+					<td>A-LEVELS</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	</p>
+</body>
+</html>
